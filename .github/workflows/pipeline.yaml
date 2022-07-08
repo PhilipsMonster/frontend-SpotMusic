@@ -28,7 +28,7 @@ jobs:
           docker push ${{ secrets.ARTIFACT_REGISTRY }}/spotmusic-app:latest
 
   Deploy:
-    needs: Build1
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
